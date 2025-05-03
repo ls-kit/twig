@@ -1,0 +1,146 @@
+<!-- Navigation -->
+<nav class="bg-lightbg border-b border-accent/20 fixed w-full z-50">
+  <!-- Main Header -->
+  <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div class="text-lg font-bold text-accent tracking-tight">চেষ্টা একাডেমি</div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-3 text-sm">
+          <a href="/" class="text-text hover:text-accent transition-colors">হোম</a>
+          <a href="/starters.html" class="text-text hover:text-accent transition-colors">Starters</a>
+          <a href="#tools" class="text-text hover:text-accent transition-colors">টুলস</a>
+          <a href="#starters" class="text-text hover:text-accent transition-colors">স্টার্টার্স</a>
+          <a href="singlepr.html" class="text-text hover:text-accent transition-colors">Single</a>
+          <a href="list.html" class="text-text hover:text-accent transition-colors">List</a>
+          <a href="#account" class="px-2 py-1 text-sm border border-accent/30 rounded-md text-accent hover:bg-accent/10 transition-colors">অ্যাকাউন্ট</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-accent p-1 hover:bg-accent/10 rounded-lg transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+      </button>
+  </div>
+
+  <!-- Sticky Section Nav (Visible by default) -->
+  <div id="sectionNav" class="bg-darkbg border-t border-accent/10 transition-all duration-300">
+      <div class="container mx-auto px-4 py-1 relative">
+          <!-- Close Button -->
+          <button id="closeNav" class="absolute right-4 top-1/2 -translate-y-1/2 text-accent/80 hover:text-accent">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+          </button>
+          
+          <div class="flex justify-center space-x-3 text-xs font-medium pr-6">
+              <a href="#courses" class="text-text/80 hover:text-accent flex items-center gap-1 transition-colors">
+                  <svg class="w-3 h-3 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                  </svg>
+                  <span>কোর্স</span>
+              </a>
+              <a href="#process" class="text-text/80 hover:text-accent flex items-center gap-1 transition-colors">
+                  <svg class="w-3 h-3 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/>
+                  </svg>
+                  <span>প্রক্রিয়া</span>
+              </a>
+              <a href="#success" class="text-text/80 hover:text-accent flex items-center gap-1 transition-colors">
+                  <svg class="w-3 h-3 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <span>সফলতা</span>
+              </a>
+              <a href="#faq" class="text-text/80 hover:text-accent flex items-center gap-1 transition-colors">
+                  <svg class="w-3 h-3 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <span>FAQ</span>
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Reopen Trigger (Hidden by default) -->
+  <div id="reopenTrigger" class="fixed top-10 right-4 md:right-6 hidden z-50">
+    <button class="group relative bg-accent hover:bg-accent/80 text-darkbg p-0 rounded-full shadow-md transition-all duration-200 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent/50">
+        <!-- Down arrow with subtle animation -->
+        <svg class="w-5 h-5 transform group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+        </svg>
+    </button>
+</div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-lightbg border-t border-accent/10">
+      <div class="px-3 py-2 space-y-1 text-sm">
+          <a href="#courses" class="block px-2 py-1 rounded-md hover:bg-accent/10">কোর্স</a>
+          <a href="#process" class="block px-2 py-1 rounded-md hover:bg-accent/10">প্রক্রিয়া</a>
+          <a href="#success" class="block px-2 py-1 rounded-md hover:bg-accent/10">সফলতা</a>
+          <div class="pt-1 border-t border-accent/10">
+              <a href="#account" class="block px-2 py-1 text-accent hover:bg-accent/10 rounded-md">অ্যাকাউন্ট</a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      // Section Nav Elements
+      const sectionNav = document.getElementById('sectionNav');
+      const closeBtn = document.getElementById('closeNav');
+      const reopenTrigger = document.getElementById('reopenTrigger');
+
+      // Toggle Section Nav
+      const toggleSectionNav = (open) => {
+          if(open) {
+              sectionNav.classList.remove('hidden');
+              reopenTrigger.classList.add('hidden');
+              localStorage.setItem('navClosed', 'false');
+          } else {
+              sectionNav.classList.add('hidden');
+              reopenTrigger.classList.remove('hidden');
+              localStorage.setItem('navClosed', 'true');
+          }
+      };
+
+      // Close Button Handler
+      closeBtn.addEventListener('click', () => toggleSectionNav(false));
+
+      // Reopen Trigger Handler
+      reopenTrigger.addEventListener('click', () => {
+          toggleSectionNav(true);
+          // Scroll to show the nav if it's off-screen
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+
+      // Check localStorage for saved preference
+      if(localStorage.getItem('navClosed') === 'false') {
+          toggleSectionNav(true);
+      }
+
+      // Hide nav on scroll down, show on scroll up
+      let lastScroll = 0;
+      window.addEventListener('scroll', () => {
+          const currentScroll = window.pageYOffset;
+          if (currentScroll > lastScroll && currentScroll > 100) {
+              // Scrolling down
+              sectionNav.classList.add('opacity-0', 'pointer-events-none');
+              sectionNav.classList.add('hidden');
+          } else {
+              // Scrolling up
+              sectionNav.classList.remove('hidden');
+              reopenTrigger.classList.add('hidden');
+              sectionNav.classList.remove('opacity-0', 'pointer-events-none');
+              
+          }
+          lastScroll = currentScroll;
+      });
+  });
+</script>
+
+ <main class="pt-20">

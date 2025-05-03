@@ -1,18 +1,17 @@
-<section class='p-6'>
-
-<h2>{{ hero.title }}</h2>
-{% include "components/button.twig" with {
-  url: "/signup",
-  label: "Join Now Here now"
-} %}
-
-
-</section>
-
-<section class="bg-blue-100 py-16 text-center">
-  <h1 class="text-4xl font-bold text-blue-800 mb-4">Hello from Tailwind!</h1>
-  <p class="text-lg text-blue-600">If you can see this styled correctly, Tailwind is working 🎉</p>
-  <a href="#" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">
-    Test Button
-  </a>
-</section>
+    <!-- Hero Section -->
+    <section id="hero" class="bg-darkbg text-text py-20 px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        <span class="text-accent">সহজেই</span> ফ্রিল্যান্সিং শুরু করুন
+      </h1>
+      <p class="text-text mb-8 max-w-xl mx-auto">
+        নতুনদের জন্য ডেডিকেটেড সিস্টেম — শিখুন, কাজে লাগান, এবং High-Paying প্রজেক্ট নিন!
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="#free-kit" class="bg-accent text-darkbg px-6 py-3 rounded font-semibold hover:bg-accent/90 transition">
+          Claim Free Kit
+        </a>
+        <a href="#courses" class="border border-accent px-6 py-3 rounded text-accent hover:bg-accent hover:text-darkbg transition">
+          View Courses
+        </a>
+      </div>
+    </section>
