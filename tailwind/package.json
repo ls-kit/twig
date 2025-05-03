@@ -1,0 +1,11 @@
+{
+  "name": "twig-tailwind-starter",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ../assets/style.css --watch",
+    "build": "tailwindcss -i ./input.css -o ../assets/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}

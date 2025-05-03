@@ -1,0 +1,7 @@
+{
+  "name": "starter/twig-theme",
+  "description": "Twig static theme",
+  "require": {
+    "twig/twig": "^3.0"
+  }
+}
